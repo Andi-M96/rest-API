@@ -75,10 +75,11 @@ $passwordHash = '$2a$04$08KDO94wJ.T5FvBaao.qXO1H1dI1W3MuqPRQWLrnYOBDUMz6imGZW';
 if ((isset($_SERVER['PHP_AUTH_USER']) && ($_SERVER['PHP_AUTH_USER'] == "onde")) &&
     (isset($_SERVER['PHP_AUTH_PW']) && (password_verify($_SERVER['PHP_AUTH_PW'], $passwordHash)))
 ) {
+    
     echo "<p>Hello {$_SERVER['PHP_AUTH_USER']}.</p>";
 } else {
     header('WWW-Authenticate: Basic realm="My Realm"');
     header('HTTP/1.0 401 Unauthorized');
-    echo 'Text to send if user hits Cancel button';
+    echo 'Text to send çif user hits Cancel button';
     exit;
 }
