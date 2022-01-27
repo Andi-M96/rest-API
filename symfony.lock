@@ -11,11 +11,88 @@
             "config/routes/annotations.yaml"
         ]
     },
+    "doctrine/cache": {
+        "version": "2.1.1"
+    },
+    "doctrine/collections": {
+        "version": "1.6.8"
+    },
+    "doctrine/common": {
+        "version": "3.2.1"
+    },
+    "doctrine/dbal": {
+        "version": "3.3.0"
+    },
+    "doctrine/deprecations": {
+        "version": "v0.5.3"
+    },
+    "doctrine/doctrine-bundle": {
+        "version": "2.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "2.4",
+            "ref": "f98f1affe028f8153a459d15f220ada3826b5aa2"
+        },
+        "files": [
+            "config/packages/doctrine.yaml",
+            "config/packages/prod/doctrine.yaml",
+            "config/packages/test/doctrine.yaml",
+            "src/Entity/.gitignore",
+            "src/Repository/.gitignore"
+        ]
+    },
+    "doctrine/doctrine-migrations-bundle": {
+        "version": "3.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.1",
+            "ref": "ee609429c9ee23e22d6fa5728211768f51ed2818"
+        },
+        "files": [
+            "config/packages/doctrine_migrations.yaml",
+            "migrations/.gitignore"
+        ]
+    },
+    "doctrine/event-manager": {
+        "version": "1.1.1"
+    },
     "doctrine/inflector": {
         "version": "2.0.4"
     },
+    "doctrine/instantiator": {
+        "version": "1.4.0"
+    },
     "doctrine/lexer": {
         "version": "1.2.2"
+    },
+    "doctrine/migrations": {
+        "version": "3.4.0"
+    },
+    "doctrine/orm": {
+        "version": "2.11.0"
+    },
+    "doctrine/persistence": {
+        "version": "2.3.0"
+    },
+    "doctrine/sql-formatter": {
+        "version": "1.1.2"
+    },
+    "friendsofphp/proxy-manager-lts": {
+        "version": "v1.0.5"
+    },
+    "laminas/laminas-code": {
+        "version": "3.4.1"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.4.0"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.4.1"
+    },
+    "monolog/monolog": {
+        "version": "1.26.1"
     },
     "nikic/php-parser": {
         "version": "v4.13.2"
@@ -59,6 +136,9 @@
     },
     "symfony/deprecation-contracts": {
         "version": "v2.5.0"
+    },
+    "symfony/doctrine-bridge": {
+        "version": "v4.4.36"
     },
     "symfony/dotenv": {
         "version": "v4.4.36"
@@ -132,6 +212,24 @@
     "symfony/mime": {
         "version": "v4.4.36"
     },
+    "symfony/monolog-bridge": {
+        "version": "v4.4.27"
+    },
+    "symfony/monolog-bundle": {
+        "version": "3.7",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.7",
+            "ref": "a7bace7dbc5a7ed5608dbe2165e0774c87175fe6"
+        },
+        "files": [
+            "config/packages/dev/monolog.yaml",
+            "config/packages/prod/deprecations.yaml",
+            "config/packages/prod/monolog.yaml",
+            "config/packages/test/monolog.yaml"
+        ]
+    },
     "symfony/polyfill-intl-idn": {
         "version": "v1.24.0"
     },
@@ -153,6 +251,12 @@
     "symfony/polyfill-php81": {
         "version": "v1.24.0"
     },
+    "symfony/process": {
+        "version": "v4.4.36"
+    },
+    "symfony/proxy-manager-bridge": {
+        "version": "v4.4.36"
+    },
     "symfony/routing": {
         "version": "4.4",
         "recipe": {
@@ -170,11 +274,23 @@
     "symfony/service-contracts": {
         "version": "v2.5.0"
     },
+    "symfony/stopwatch": {
+        "version": "v4.4.27"
+    },
     "symfony/var-dumper": {
         "version": "v4.4.36"
     },
     "symfony/var-exporter": {
         "version": "v4.4.34"
+    },
+    "symfony/web-server-bundle": {
+        "version": "4.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
+        }
     },
     "symfony/yaml": {
         "version": "v4.4.36"
